@@ -1,0 +1,115 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+}
+
+/* Sección Hero (Bienvenida) */
+.hero-section {
+    background: linear-gradient(to right, #0f0f0f, #1e1e1e);
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Título con efecto neón */
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px #0ff;
+}
+
+/* Subtítulo */
+.hero-section p {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.9;
+}
+
+/* Secciones Generales */
+section {
+    padding: 50px 0;
+}
+
+/* Tecnologías Usadas */
+.technologies-section h2,
+.description-section h2,
+.market-section h2 {
+    font-size: 2rem;
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+.tech-icon {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Sección del Chat */
+.chat-section {
+    background-color: #1e1e1e;
+    padding: 50px 0;
+}
+
+.chat-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0ff;
+}
+
+h2 {
+    text-align: center;
+    color: #0ff;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #222;
+    border-radius: 5px;
+}
+
+/* Inputs y Botones */
+#user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .chat-container {
+        width: 100%;
+    }
+}
