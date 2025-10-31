@@ -90,14 +90,16 @@ h2 {
     border: none;
     border-radius: 5px;
 }
-
 button {
-    padding: 10px;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* separa los botones horizontalmente */
 }
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
