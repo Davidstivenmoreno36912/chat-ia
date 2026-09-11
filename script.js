@@ -1,4 +1,4 @@
-const apiKey = "AIzaSyAuU7HbgSQgKWIycAIA7slV4yKQibmiFyE"; // Reemplaza con tu clave de API
+const apiKey = "AQ.Ab8RN6LU-1Embx9IDigYw7GK0MjVUGXLuFoQyqgnLg8PPsjCaA"; // Reemplaza con tu clave de API
 
 
 async function sendMessage() {
