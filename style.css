@@ -1,117 +1,535 @@
-/* General */
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
+    background: #0b0f14;
+    color: #ffffff;
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Sección Hero (Bienvenida) */
-.hero-section {
-    background: linear-gradient(to right, #0f0f0f, #1e1e1e);
-    padding: 80px 0;
-    text-align: center;
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 255, 255, 0.15);
 }
 
-/* Logo */
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
-
-/* Título con efecto neón */
-.hero-section h1 {
-    font-size: 3rem;
+.navbar-brand {
     font-weight: bold;
-    color: white;
-    text-shadow: 0px 0px 10px #0ff;
+    letter-spacing: 0.5px;
 }
 
-/* Subtítulo */
-.hero-section p {
-    font-size: 1.5rem;
-    color: white;
-    opacity: 0.9;
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+    background:
+        radial-gradient(circle at center, rgba(0, 255, 255, 0.12), transparent 45%),
+        linear-gradient(135deg, #080b10, #111820);
+
+    padding: 90px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.15);
 }
 
-/* Secciones Generales */
-section {
-    padding: 50px 0;
-}
-
-/* Tecnologías Usadas */
-.technologies-section h2,
-.description-section h2,
-.market-section h2 {
-    font-size: 2rem;
-    color: #0ff;
+.hero-section h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
     margin-bottom: 20px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 8px rgba(0, 255, 255, 0.8),
+        0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+.hero-section p {
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-size: 1.25rem;
+    color: #d7e2e8;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 50px;
+
+    color: #00ffff;
+    background: rgba(0, 255, 255, 0.05);
+
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+section {
+    padding: 70px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #00ffff;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+    color: #b9c5cc;
+}
+
+
+/* =========================================================
+   TECNOLOGÍAS
+========================================================= */
+
+.technologies-section {
+    background: #0d1218;
+}
+
+.tech-card {
+    height: 100%;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    background: #111820;
+
+    border: 1px solid #1e3038;
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 15px rgba(0, 255, 255, 0.15);
 }
 
 .tech-icon {
-    width: 80px;
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+.tech-card p {
+    margin: 0;
+
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   PROYECTO / DESCRIPCIÓN
+========================================================= */
+
+.description-section {
+    background: #080c11;
+}
+
+.project-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.project-content p {
+    color: #c5d0d6;
+    font-size: 1.05rem;
+}
+
+.project-highlight {
+    margin-top: 30px;
+    padding: 25px;
+
+    background: #111820;
+
+    border-left: 4px solid #00ffff;
+    border-radius: 8px;
+}
+
+.project-highlight strong {
+    color: #00ffff;
+}
+
+
+/* =========================================================
+   HABILIDADES DEMOSTRADAS
+========================================================= */
+
+.skills-section {
+    background: #0d1218;
+}
+
+.skill-item {
+    padding: 20px;
+
+    background: #111820;
+
+    border: 1px solid #1e3038;
+    border-radius: 10px;
+
+    height: 100%;
+}
+
+.skill-item h3 {
+    color: #00ffff;
+    font-size: 1.15rem;
     margin-bottom: 10px;
 }
 
-/* Sección del Chat */
+.skill-item p {
+    color: #b9c5cc;
+    margin: 0;
+}
+
+
+/* =========================================================
+   CHAT
+========================================================= */
+
 .chat-section {
-    background-color: #1e1e1e;
-    padding: 50px 0;
+    background:
+        radial-gradient(circle at center, rgba(0, 255, 255, 0.08), transparent 45%),
+        #080c11;
+
+    padding: 80px 20px;
 }
 
 .chat-container {
-    max-width: 500px;
+    width: 100%;
+    max-width: 650px;
+
     margin: auto;
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #0ff;
+
+    padding: 30px;
+
+    background: #111820;
+
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 30px rgba(0, 255, 255, 0.08);
 }
 
-h2 {
-    text-align: center;
-    color: #0ff;
+.chat-container h2 {
+    margin-bottom: 25px;
 }
+
+.chat-subtitle {
+    text-align: center;
+    color: #aebbc2;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   CHAT BOX
+========================================================= */
 
 #chat-box {
-    height: 300px;
+    height: 350px;
+
     overflow-y: auto;
-    border: 1px solid #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #222;
-    border-radius: 5px;
+
+    padding: 20px;
+
+    background: #080c11;
+
+    border: 1px solid #26343c;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
 }
 
-/* Inputs y Botones */
+
+/* Mensajes */
+
+.message {
+    max-width: 85%;
+
+    padding: 12px 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+
+    word-wrap: break-word;
+}
+
+.user-message {
+    margin-left: auto;
+
+    background: #075c66;
+
+    border: 1px solid #00ffff;
+
+    color: #ffffff;
+}
+
+.ai-message {
+    margin-right: auto;
+
+    background: #182129;
+
+    border: 1px solid #34434c;
+
+    color: #e5edf1;
+}
+
+
+/* =========================================================
+   INPUT + BOTONES
+========================================================= */
+
+.input-group {
+    display: flex;
+
+    gap: 8px;
+}
+
 #user-input {
-    width: calc(100% - 70px);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    flex: 1;
+
+    width: auto;
+
+    padding: 12px 15px;
+
+    border: 1px solid #35454e;
+
+    border-radius: 8px;
+
+    background: #080c11;
+
+    color: #ffffff;
+
+    outline: none;
 }
-button {
-  padding: 10px;
-  border: none;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px; /* separa los botones horizontalmente */
+
+#user-input:focus {
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 8px rgba(0, 255, 255, 0.15);
+}
+
+#user-input::placeholder {
+    color: #718089;
 }
 
 
+/* =========================================================
+   BOTONES
+========================================================= */
 
-/* Responsive */
+.input-group .btn {
+    margin: 0;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+}
+
+.input-group .btn-primary {
+    background: #00a9b5;
+
+    border: 1px solid #00ffff;
+
+    color: #ffffff;
+}
+
+.input-group .btn-primary:hover {
+    background: #00c7d4;
+
+    transform: translateY(-1px);
+}
+
+.input-group .btn-danger {
+    background: #252d33;
+
+    border: 1px solid #46545d;
+
+    color: #ffffff;
+}
+
+.input-group .btn-danger:hover {
+    background: #343e45;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   INTEGRACIÓN API
+========================================================= */
+
+.api-integration {
+    max-width: 900px;
+
+    margin: 50px auto 0;
+
+    padding: 25px;
+
+    background: #0d141a;
+
+    border: 1px solid #1d343b;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.api-integration h3 {
+    color: #00ffff;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 12px;
+}
+
+.api-integration p {
+    color: #aebbc2;
+
+    margin: 0;
+}
+
+.api-badge {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 7px 14px;
+
+    background: rgba(0, 255, 255, 0.06);
+
+    border: 1px solid rgba(0, 255, 255, 0.3);
+
+    border-radius: 20px;
+
+    color: #00ffff;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: #06090d;
+
+    border-top: 1px solid #18242b;
+
+    color: #7f8c93;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
 @media (max-width: 768px) {
+
+    .hero-section {
+        padding: 65px 20px;
+    }
+
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .hero-section p {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
+    }
+
+    section {
+        padding: 55px 15px;
     }
 
     .chat-container {
+        padding: 20px;
+    }
+
+    #chat-box {
+        height: 300px;
+    }
+
+    .input-group {
+        flex-wrap: wrap;
+    }
+
+    #user-input {
         width: 100%;
+        flex: 1 0 100%;
+    }
+
+    .input-group .btn {
+        flex: 1;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .hero-section h1 {
+        font-size: 1.9rem;
+    }
+
+    .input-group .btn {
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
