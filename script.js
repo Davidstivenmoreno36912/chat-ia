@@ -113,8 +113,3 @@ function clearChat() {
     document.getElementById("chat-box").innerHTML = "";
 
 }
-
-// Botón limpiar chat
-function clearChat() {
-    document.getElementById("chat-box").innerHTML = "";
-}
