@@ -1,4 +1,4 @@
-const apiKey = "AQ.Ab8RN6LU-1Embx9IDigYw7GK0MjVUGXLuFoQyqgnLg8PPsjCaA";
+const apiKey = "AQ.Ab8RN6LeoLX8KztxT-8GLtGz27ljug1XNwmbfHuzCwu0u2R1Jw";
 
 
 async function sendMessage() {
